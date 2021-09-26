@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+form {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+.invalid {
+	background-color: #FFF0F5;
+	font-size: 20px;
+	margin: 8px;
+	padding: 4px 8px;
+}
+.valid {
+	background-color: #F0FFF0;
+	font-size: 20px;
+	margin: 12px;
+	padding: 6px 12px;
+}
+.warn {
+	background-color: #EEE8AA;
+	border-left: 10px solid #BDB76B;
+	font-size: 20px;
+	margin: 12px;
+}

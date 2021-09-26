@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/styles.css" />
+		<title>GMP KML Validation Tester</title>
+	</head>
+	<body>
+		<h2>GMP KML File Validator</h2>
+		<h3>Choose a KML file on your computer to be validated:</h3>
+		<form action="fileprocess" enctype="multipart/form-data" method="post">
+			<input accept=".kml,.kmz,.txt,.xml" id="fileupload" name="kml" type="file" />
+			<button type="submit">Submit</button>
+		</form>
+		<h3>Validate a KML file hosted on the internet:</h3>
+		<form action="urlprocess" method="post">
+			<input id="getlink" name="url" size="20" type="text" />
+			<button type="submit">Submit</button>
+		</form>
+		<h3>Check if an entered KML sample is valid</h3>
+		<form action="textprocess" method="post">
+			<textarea cols="50" id="testtext" name="txt" placeholder="Type here." rows="20"></textarea>
+			<button type="submit">Submit</button>
+		</form>
+		<p class="warn">
+			{{ err_message }}
+		</p>
+	</body>
+</html>
